@@ -701,9 +701,15 @@
         <!-- Énfasis en las Fritas antes del Pedido -->
         <section class="bg-highlight-yellow py-8 text-gray-900 text-center shadow-inner">
             <div class="max-w-4xl mx-auto px-4">
-                <p class="text-3xl sm:text-4xl font-extrabold tracking-tight uppercase">
-                    Todo sale con fritas 🍟
+                <p class="text-3xl sm:text-4xl font-extrabold tracking-tight uppercase mb-6">
+                    Todo sale con fritas
                 </p>
+                <!-- Contenedor para los GIFs -->
+                <div class="flex justify-center items-center space-x-2 sm:space-x-4">
+                    <img src="https://raw.githubusercontent.com/Alhambrabm/Alhambra/refs/heads/main/Hamburguesas.gif" alt="GIF de Hamburguesa" class="h-16 sm:h-20 w-auto rounded-lg shadow-md">
+                    <img src="https://raw.githubusercontent.com/Alhambrabm/Alhambra/refs/heads/main/rico.gif" alt="GIF de Comida Apetitosa" class="h-16 sm:h-20 w-auto rounded-lg shadow-md">
+                    <img src="https://raw.githubusercontent.com/Alhambrabm/Alhambra/refs/heads/main/Papas.gif" alt="GIF de Papas Fritas" class="h-16 sm:h-20 w-auto rounded-lg shadow-md">
+                </div>
             </div>
         </section>
 
@@ -814,7 +820,7 @@
 
             // 4. Configurar el cierre del modal solo al hacer clic en el fondo oscuro
             modalOverlay.onclick = function(event) {
-                const modalContent = document.getElementById('modal-product-content');
+                const modalContent = document.getElementById('product-modal-content');
                 
                 // Si el clic ocurrió directamente sobre el overlay (el fondo oscuro), cerrar.
                 if (event.target === modalOverlay) {
